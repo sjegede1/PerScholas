@@ -1,0 +1,127 @@
+body {
+  font-family: serif;
+}
+.navContainer {
+  border: solid black;
+  height: 36px;
+  border-width: 0.2px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+}
+.subNav {
+  border: solid green;
+  border-width: 0.2px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.scrollContainer {
+  border: solid black;
+  background-color: lightgray;
+  /* height:45px; */
+  border-width: 0.2px;
+}
+.mainImg {
+  /* border:solid purple; */
+  height: 475px;
+  margin: 1em;
+  padding: 1em;
+}
+.midContainer {
+  /* border:solid blue; */
+  /* height:22vh; */
+  margin: 1em;
+}
+.iconContainer {
+  /* border:solid red; */
+  display: flex;
+}
+.themeContainer {
+  /* border:solid blue; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+}
+.logo {
+  /* border:solid pink; */
+  margin: 5px;
+  height: 25px;
+}
+.theme {
+  text-align: right;
+  padding-top: 6px;
+}
+.miniSub {
+  /* border:solid pink; */
+  width: 25%;
+}
+​ .nike {
+  /* border:solid blue; */
+  width: 55px;
+  height: 100%;
+}
+​ .symbol {
+  border: solid black;
+  border-radius: 50%;
+  border-width: 0.2px;
+  padding: 3px;
+}
+#flexer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  width: 32%;
+}
+#firstOne {
+  width: 15%;
+  margin-right: 20%;
+}
+.searchbar {
+  border-radius: 22px;
+  margin-top: 19px;
+  margin-left: 10px;
+  text-align: center;
+  width: 200px;
+}
+.symbol {
+  height: 30px;
+}
+.symbol:hover {
+  height: 30px;
+  background-color: lime;
+}
+.menu {
+  margin-top: 8px;
+}
+​ .topTxt,
+.bottomTxt {
+  text-align: center;
+}
+.shoePic {
+  width: 100%;
+}
+.slogan {
+  width: 42%;
+}
+.shop {
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  width: 125px;
+  border-radius: 22px;
+  border: solid grey;
+}
+.shop:hover {
+  font-size: 22px;
+  background-color: black;
+  color: lime;
+  width: 125px;
+  border-radius: 22px;
+  border: solid grey;
+}
+.sneaker {
+  height: 250px;
+  width: 250px;
+  border: solid lime;
+}

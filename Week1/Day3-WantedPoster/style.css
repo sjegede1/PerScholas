@@ -6,6 +6,10 @@ body {
     background-color: lightgrey;
 }
 
+img {
+    height: 225px;
+}
+
 .poster {
     display:flex;
     flex-direction: column;
