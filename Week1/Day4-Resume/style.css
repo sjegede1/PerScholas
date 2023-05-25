@@ -1,0 +1,126 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    border:solid red;
+    background-color: lightgrey;
+    height:22vh;
+    margin:25px;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.nameCardContainer {
+    background-color: white;
+    margin: 15px 50px;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.nameCard {
+    border: solid grey 2px;
+}
+
+.nameCard hr {
+    width: 5em;
+}
+
+.introContainer{
+    border:solid blue;
+    height:22vh;
+    margin:25px;
+    display:flex;
+    justify-content: space-evenly;
+    padding:4px;
+    max-width: 900px;
+}
+.skillsContainer{
+    border:solid pink;
+    height:22vh;
+    margin:25px;
+    display:flex;
+    justify-content: space-evenly;
+    padding:4px;
+    max-width: 900px;
+}
+.xpContainer{
+    border:solid purple;
+    height:22vh;
+    margin:25px;
+    display:flex;
+    max-width: 900px;
+}
+.profileContainer, .imgContainer, .contactContainer{
+    border:solid lightblue;
+    width:33%;
+}
+
+.profileContainer {
+    text-align: center;
+    padding: 5px;
+}
+
+.profileDivider {
+    width: 50%;
+}
+
+.profileInfo {
+    text-align: justify;
+    font-size: 0.8em;
+}
+
+.imgContainer {
+    padding: 5px;
+}
+
+.headshot {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactLine{
+    border: solid thin red;
+    display: flex;
+    height: 20%;
+    align-items: center;
+    padding: 2px;
+    
+}
+
+.contactInfo {
+    width: 100%;
+}
+
+.contactIcon {
+    height: 100%;
+}
+
+.contactContainer hr {
+    margin: 0px;
+}
+
+
+.eduContainer, .assetContainer, .industryContainer{
+    border:solid orange;
+    width:33%;
+}
+.left{
+    border:solid green;
+    width:70%;
+}
+.right{
+    border:solid purple;
+    width:30%;
+}

@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+    font-family: Roboto;
+}
+.mastHead {
+    display: flex;
+    border: solid thin black;
+    flex-direction: row;
+    height: 56px;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.hamburgerMenu {
+    border: solid thin green;
+    width: 40px;
+
+}
+
+.logoContainer {
+    border: solid thin red;
+    width: 127px;
+}
+
+.searchContainer {
+    border: solid thin grey;
+    width: 100%;
+}
+.mastHeadIcons {
+    display: flex;
+    border: solid thin blue;
+
+}
+.createIcon {
+    display:flex;
+    border: solid thin grey;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.notificationBell {
+    display:flex;
+    border: solid thin grey;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePicIcon {
+    display:flex;
+    border: solid thin grey;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBody {
+    border: solid thin grey;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.navbar {
+    border: solid thin red;
+    width: 64px;
+    
+}
+
+.navIcons {
+    border: solid thin yellow;
+    display: flex;
+    flex-direction: column;
+    height:74px;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerContent {
+    border: solid thin green;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.topics {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    justify-content: space-evenly;
+}
+
+.topicIcon {
+    display: flex;
+    height: 32px;
+    font: 14px Roboto, Arial, sans-serif;
+    border: solid thin grey;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    margin: 12px 12px 12px 0px;
+    padding: 0px 12px;
+}
+
+#firstTopcIcon {
+    margin: 12px 12px 12px 24px;
+}
