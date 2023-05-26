@@ -1,0 +1,69 @@
+.resumeContainer {
+    /* border: solid black; */
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.leftColumn {
+    /* border: solid red; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.nameArrowBody, .contactContainer {
+    /* border: solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nameArrowBody {
+    background-color: salmon;
+}
+
+.headshotImg {
+    /* border: solid green; */
+    width: 80%;
+    border-radius: 50%;
+}
+
+.nameArrowHead {
+    width: 100%;
+    display: flex;
+}
+.leftArrowHead {
+    width: 0;
+    height: 0;
+    border-top: 150px solid salmon;
+    border-left: 150px solid transparent;
+}
+
+.rightArrowHead {
+    width: 0;
+    height: 0;
+    border-top: 150px solid salmon;
+    border-right: 150px solid transparent;
+}
+
+.contacIconContainer {
+    width: 100%
+}
+
+.contactIcon {
+    width: 20%;
+}
+
+.rightColumn {
+    border: solid thin salmon;
+    margin: 10px;
+    padding: 10px;
+}
+
+.
+
