@@ -1,116 +1,193 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
 body {
-    font-family: Roboto;
+  font-family: Roboto;
 }
 .mastHead {
-    display: flex;
-    border: solid thin black;
-    flex-direction: row;
-    height: 56px;
-    flex-direction: row;
-    align-items: center;
-    
+  display: flex;
+  border: solid thin black;
+  flex-direction: row;
+  height: 56px;
+  flex-direction: row;
+  align-items: center;
 }
 
 .hamburgerMenu {
-    border: solid thin green;
-    width: 40px;
-
+  border: solid thin green;
+  width: 40px;
 }
 
 .logoContainer {
-    border: solid thin red;
-    width: 127px;
+  border: solid thin red;
+  width: 127px;
 }
 
 .searchContainer {
-    border: solid thin grey;
-    width: 100%;
+  border: solid thin grey;
+  width: 100%;
 }
 .mastHeadIcons {
-    display: flex;
-    border: solid thin blue;
-
+  display: flex;
+  border: solid thin blue;
 }
 .createIcon {
-    display:flex;
-    border: solid thin grey;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  border: solid thin grey;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .notificationBell {
-    display:flex;
-    border: solid thin grey;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  border: solid thin grey;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .profilePicIcon {
-    display:flex;
-    border: solid thin grey;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  border: solid thin grey;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .mainBody {
-    border: solid thin grey;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+  border: solid thin grey;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .navbar {
-    border: solid thin red;
-    width: 64px;
-    
+  border: solid thin red;
+  width: 64px;
 }
 
 .navIcons {
-    border: solid thin yellow;
-    display: flex;
-    flex-direction: column;
-    height:74px;
-    align-items: center;
-    justify-content: center;
+  border: solid thin yellow;
+  display: flex;
+  flex-direction: column;
+  height: 74px;
+  align-items: center;
+  justify-content: center;
 }
 
 .centerContent {
-    border: solid thin green;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
+  border: solid thin green;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .topics {
-    display: flex;
-    flex-direction: row;
-    height: 56px;
-    justify-content: space-evenly;
+  border: solid thin brown;
+  display: inline-flex;
+  flex-direction: row;
+  height: 56px;
+  width: 100%;
 }
 
 .topicIcon {
-    display: flex;
-    height: 32px;
-    font: 14px Roboto, Arial, sans-serif;
-    border: solid thin grey;
-    border-radius: 5px;
-    align-items: center;
-    text-align: center;
-    margin: 12px 12px 12px 0px;
-    padding: 0px 12px;
+  display: flex;
+  background-color: #0000000D;;
+  height: 32px;
+  font: 14px Roboto, Arial, sans-serif;
+  border: solid thin grey;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  margin: 12px 12px 12px 0px;
+  padding: 0px 12px;
 }
 
-#firstTopcIcon {
-    margin: 12px 12px 12px 24px;
+#firstTopicIcon {
+  margin: 12px 12px 12px 24px;
+  background-color: black;
+  color: white;
+}
+
+.videoContainer {
+  border: solid thin purple;
+  display: grid;
+  grid-auto-rows: auto;
+  width: 100%;
+}
+
+.videoRow {
+  display: flex;
+  border: solid thin black;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoCard {
+  margin: 10px;
+}
+
+.videoDetails {
+  border: solid thin yellow;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.channelIconContainer {
+  border: solid thin blue;
+  display: flex;
+  flex-direction: row;
+  width: 40px;
+  height: 100%;
+}
+
+.channelIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+
+.videoDetailsText {
+    border: solid thin red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 280px;
+}
+
+.videoTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.verticalBreadcrumbs {
+    border: solid thin green;
+    width: 30px;
+}
+
+.imgBreadcrumbs {
+    width: 25px;
+}
+
+.videoDetailsText p {
+    margin: 5px;
+}
+
+.channelName, .views {
+    color: #606060;
 }
