@@ -1,10 +1,17 @@
+body {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
 .resumeContainer {
     /* border: solid black; */
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    max-width: 900px;
+    margin:10px;
+    }
 
 .leftColumn {
     /* border: solid red; */
@@ -65,5 +72,5 @@
     padding: 10px;
 }
 
-.
+.certifications
 
