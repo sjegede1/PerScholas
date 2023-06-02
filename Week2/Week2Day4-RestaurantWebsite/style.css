@@ -1,0 +1,214 @@
+.restaurantContainer {
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;;
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    border-bottom: solid thin grey;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.logoImg {
+    height: 80%;
+    justify-self: left;;
+}
+
+.navbarItems {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbarItems p {
+    margin:0.5em;
+    font-size: large;
+    font-stretch: condensed;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.profileIconContainer {
+    display: flex;
+    height: 100%;
+    margin-inline: 20px;
+}
+
+.profileIconContainer img {
+    margin-inline: 10px;
+    height: 80%;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.restaurantBody {
+    /* border: solid thin red; */
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.menuContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-right: solid 1px grey;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    /* border: solid thin green; */
+    margin: 5px 5px;
+    padding: 15px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.menuItemName {
+    text-align: center;
+    margin: 5px;
+}
+
+.menuItemImg {
+    width: 80%;
+}
+
+.menuItemDescription {
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.buttonContainer {
+    display: flex;
+    height: 30px;
+    width:100%;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+}
+
+.shoppingCart {
+    /* border: solid purple; */
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    text-align: center;
+}
+
+#shoppingCartInfo {
+    border-radius: 10px;
+    background-color: #008938;
+    width: fit-content;
+    padding: 15px;
+    align-self: center;
+    color: white;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cartItem {
+    /* border: solid thin fuchsia; */
+    display: flex;
+    margin: 10px 2px;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartItem span {
+    /* border: solid thin brown; */
+    text-align: center;
+
+}
+.priceSpan {
+    padding: 10px;
+    align-self: right;
+}
+.cartItem img {
+    /* border: solid thin brown; */
+    height: 30px;
+}
+
+.totalPriceContainer {
+    /* border: solid turquoise; */
+    display: flex;
+    flex-direction: row;
+}
+
+#totalPriceInfo {
+    /* border: solid thin orange; */
+    display: flex;
+    width:100%;
+    align-items: center;
+    color: grey
+}
+
+#totalPriceSum {
+    /* border: solid thin orange; */
+    align-self: right;
+}
+
+.footer {
+    border-top: solid thin grey;
+    width: 100%;
+    height: 50px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+}
+
+.socialMediaImg {
+    height: 70%;
+    border-radius: 50%;
+    margin-inline: 10px;
+}
+
+@media (max-width: 1200px) {
+    .menuContainer {
+        grid-template-columns: 1fr 1fr;
+}
+}
+
+@media (max-width: 800px) {
+    .menuContainer {
+        grid-template-columns: 1fr;
+}
+}
+
+
