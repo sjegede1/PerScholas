@@ -80,8 +80,8 @@ for (let i=0;i<menuItems.length;i++) {
     menuItemImg.src = imgSrc[sandwichVarNames[i]]
     menuItemDescription.innerHTML = description[sandwichVarNames[i]]
 
-    sixInBtnArray[i].onclick = function() {addToCart(6,sandwichVarNames[i]);calculateTotalPrice()}
-    footLongBtnArray[i].onclick = function() {addToCart(12,sandwichVarNames[i]);calculateTotalPrice()}
+    sixInBtnArray[i].onclick = () => {addToCart(6,sandwichVarNames[i]);calculateTotalPrice()}
+    footLongBtnArray[i].onclick = () => {addToCart(12,sandwichVarNames[i]);calculateTotalPrice()}
 }
 
 
