@@ -1,3 +1,4 @@
+// ScreenContainer class is where calculator values are displayed
 const screenContainer = document.querySelector(".screenContainer");
 
 // When you press the button send character to screen
@@ -5,7 +6,7 @@ const buttonPress = (symbol) => {
   screenContainer.textContent += symbol;
 };
 
-// Make all buttons pressable
+// Make all buttons pressable (number is numerics) (symbols is math operations excluding equalSign)
 let allNumbersArray = document.querySelectorAll([".number", ".symbol"]);
 for (numberButton of allNumbersArray) {
   let numberSymbol = numberButton.innerHTML;
@@ -15,19 +16,19 @@ for (numberButton of allNumbersArray) {
 }
 
 // Clear screen function to be used with C and equalSign
+// Used to remove all text from screen
 const clearScreen = () => {
   screenContainer.innerHTML = "";
 };
 
-// Make C button clear screen onClick
+// Make C button clear screen onClick and place zero on the screencd ..
 const clearScreenButton = document.querySelector(".clearScreen");
 clearScreenButton.onclick = () => {
   clearScreen();
   buttonPress(0);
 };
 
-// split screen content by math operator
-
+// Split screen content by math operator
 const screenContentSplit = (screenContent) => {
   // split by math operator
   for (operator of "/x-+") {
@@ -53,7 +54,7 @@ const equalSignPress = () => {
 
   console.log(screenContentArray);
 
-  // if statement to do each math operation
+  // Perform different math operations based on the screenContentArray length and operator
   if (screenContentArray.length > 3) {
     console.log("ERR", "Length>3");
     clearScreen();
@@ -109,6 +110,6 @@ const equalSignPress = () => {
   }
 };
 
-// add onclick to equalSign
+// Add onclick event to the equalSign button
 const equalSignButton = document.querySelector(".equalSign");
 equalSignButton.onclick = equalSignPress;
