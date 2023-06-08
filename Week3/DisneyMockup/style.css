@@ -1,0 +1,147 @@
+body {
+  font-family: Avenir, sans-serif;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  height: 515px;
+  border: solid thin black;
+  padding-inline: 60px;
+  background-color: grey;
+  justify-self: center;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60px;
+  margin: 5px 0px 20px 0px;
+}
+
+.loginButton {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 8px 16px;
+}
+
+.subscriptionInfoContainer {
+  border: solid thin blue;
+  width: 50%;
+}
+
+.subscriptionInfoCardGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriptionInfoCard {
+  border: solid thin pink;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.subscriptionLogo {
+  width: 100%;
+}
+
+.carouselControls,
+.currentCarouselInfo {
+  align-self: center;
+}
+
+.browseContent {
+  border: solid thin black;
+  padding: 0px 60px;
+}
+
+.browseOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0px 0px;
+  padding: 22px;
+  height: 20px;
+}
+
+.option {
+  margin: 0px 11px;
+  padding: 0px 0px 5px;
+  font-size: 15px 20px;
+}
+
+.browseCardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 400px;
+}
+
+.browseCard {
+  width: 300px;
+  height: 185px;
+  border-radius: 5px;
+}
+
+.browsePlansContainer {
+  border: solid thin green;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectPlanBundle {
+  display: flex;
+  width: fit-content;
+  border: solid thin blue;
+  border-radius: 200px;
+  margin: 24px 0px 0px 0px;
+  height: 48px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bundleOption1,
+.bundleOption2 {
+  padding: 4px 15px;
+  border: solid thin grey;
+  border-radius: 200px;
+}
+
+.bundleOption1 {
+  margin-left: 5px;
+}
+.bundleOption2 {
+  margin-right: 5px;
+}
+
+.planTableHeadersGrid {
+  background-color: salmon;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 80px;
+}
+
+.planTableHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 12px 0px;
+}
+
+.disneyPlusLogo {
+  width: 80px;
+}
+
+.planTableContentGrid {
+  border: solid thin purple;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
