@@ -8,16 +8,18 @@ body {
 
 .atmContainer {
   border: solid black;
-  width: 900px;
+  width: 800px;
   height: 600px;
   display: flex;
   flex-direction: column;
   margin: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
 .screenContainer {
   border: solid pink;
-  height: 50%;
+  height: 70%;
   width: 100%;
 }
 
@@ -25,6 +27,10 @@ body {
   border: solid red;
   width: 100%;
   height: 50%;
+}
+
+.screenDisplayInput {
+  border: solid coral;
 }
 
 .screenButtonsContainer {
@@ -35,15 +41,15 @@ body {
 
 .inputsContainer {
   border: solid green;
-  width: 100%;
-  height: 50%;
+  width: 80%;
+  height: 30%;
   display: flex;
   flex-direction: row;
 }
 
 .keypadContainer {
     border: solid black;
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: row;
 }
@@ -58,18 +64,19 @@ body {
     
 }
 
-.numKeys {
+.numKey {
     width: 90%;
     height: 90%;
     font-size: 20px;
     font-weight:bold;
+    border-radius: 5px;
 }
 
 .submitButtons {
     border: solid brown;
     display: grid;
     grid-template-rows: repeat(4,1fr);
-    width: 50%;
+    width: 25%;
     justify-items: center;
     align-items:center;
 }
@@ -79,28 +86,32 @@ body {
     height: 90%;
     font-size: 20px;
     font-weight:bold;
+    border-radius: 5px;
 }
 
 .entryTrayContainer {
     border: solid black;
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .entrySlot {
     border: solid mediumaquamarine;
+    width: 80%;
 }
 
 .entryTray {
     border: solid gold;
+    width: 100%;
     height: 40%;
 }
 
 .walletContainer {
   border: solid blue;
-  width: 20%;
+  width: 300px;
   margin: 20px;
 }
 

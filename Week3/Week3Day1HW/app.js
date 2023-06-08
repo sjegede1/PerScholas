@@ -40,13 +40,31 @@ const sumArray = (numArr) => {
 
 console.log('Problem 4: ',sumArray([2, 4, 5]))
 
+//6. Define a function, as a function expression, numArgsthat returns the number of arguments passed to the function when calle
+const numArgsArrow = (...args) => {
+  return args.length
+}
+
+const numArgsExpression = function() {
+  return arguments.length
+}
+
+let myArr = [1,2,3]
+
+
+console.log('Function Expression', numArgsExpression(...myArr))
+console.log('Arrow Function',numArgsArrow(1,2,3))
+
+
+
 // 7. Define a function, as a function declaration, reverseStringthat takes a string, reverses the characters, and returns it. 
 // For example, reverseString('rockstar');would return the string "ratskcor".
 
 const reverseString = (strInput) => {
     return strInput.split('').reverse().join('')
-} 
-console.log('Problem 7: Reverse String ',reverseString('rockstar'))
+}
+let regStr = 'rockstar'
+console.log(`Problem 7: Reverse String "${regStr}":`,reverseString(regStr))
 
 // 8.
 const longestStringInArray = (strArr) => {

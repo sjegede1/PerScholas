@@ -1,0 +1,118 @@
+.promosCarousel {
+    display: flex;
+    justify-content: center;
+    height:30px;
+    font-size: 12px;
+    background-color: #F4D6CA;
+    padding: 4px 0px;
+    text-align:center;
+}
+
+.superNav {
+    border: solid thin black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 64px;
+    justify-items: center;
+    align-items: center;
+}
+
+.subNav {
+    border: solid thin grey;
+    display: flex;
+    height: 42px;
+    align-items: center;
+    text-align:center;
+}
+
+.subNavItem {
+    padding: 0px 10px;
+
+}
+
+.currentDirAside {
+    height: 22px;
+    display: flex;
+    padding: 0px 0px 0px 22px;
+    font-size: 10px;
+    align-items: center;
+}
+
+.productCategoriesTitleContainer {
+    height: 60px;
+    border: solid thin red;
+    padding: 0px 24px 24px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.productCategoriesTitle {
+    border: solid thin brown;
+    font-size: 28px;
+    height: 34px;
+    text-align: center;
+    margin: 0px 0px 8px;
+    align-self: center;
+}
+
+.productCategoriesGrid {
+    display:grid;
+    grid-template-columns: repeat(2,330px);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.categoryImg {
+    width: 300px;
+    height: 300px;
+}
+
+.categoryInfo {
+    margin: 15px 0px 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.allProductsContainer {
+    padding: 0px 15px;
+}
+
+.filterOptionsContainer {
+    display: flex;
+    border: solid thin green;
+    height: 50px;
+    align-items:center;
+    justify-content: start;
+}
+
+.filterByOption {
+    border: solid 1.5px black;
+    font-size: 13px;
+    text-align: center;
+    padding: 12px 24px;
+    margin-right: 20px;
+}
+
+.allProductsGrid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo {
+    padding: 15px 0px;
+}
+
+.productImg {
+    border: solid thin gold;
+    padding: 0px 15px;
+    width: 100%;
+}
