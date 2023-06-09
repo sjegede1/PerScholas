@@ -1,0 +1,197 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer{
+    /* border:solid black; */
+    height:100%;
+    /* font-family:Avenir,sans-serif; */
+    font-family:Helvetica,sans-serif;
+    width:960px;
+    display: flex;
+    flex-direction: column;
+}
+.subContainer{
+    background-color:rgb(238, 240, 241);
+    border:solid white;
+}
+.navBar{
+    /* border:solid red; */
+    display:flex;
+    height:45px;
+    text-align:center;
+    font-weight:600;
+    align-items: center;
+    justify-content: space-between;
+    font-size:14px;
+}
+.navItem{
+    margin-left:18px;
+}
+#disneyLogo{
+    height:44px;
+}
+#navSearch{
+    width:287px;
+    height:28px;
+}
+.searchBTN{
+    background-color: white;
+    height:25px;
+}
+.pageTitle{
+    /* border:solid green; */
+    text-align:center;
+    font-size:37px;
+    /* padding-top:20px; */
+    height:30px;
+}
+.newsBox{
+    /* border:solid blue; */
+    /* display:flex; */
+    display:grid;
+    grid-template-columns: 470px 470px;
+    row-gap:15px;
+    column-gap:10px;
+    align-items:center;
+    /* height:380px; */
+    /* justify-content: space-between; */
+    width:945px;
+    background-color: white;
+}
+.newsContent{
+    /* border:solid yellow; */
+    /* width:50%; */
+    height:370px;
+}
+.thumbNail{
+    display:block;
+    width:460px;
+    height:300px;
+    margin-left:auto;
+    margin-right:auto;
+    height:65%;
+}
+.series{
+    font-size:10px;
+    margin-top:15px;
+    margin-left:20px;
+    height:7%;
+    font-weight:600;
+    color: #524b4b;
+}
+.headLine{
+    margin-left:20px;
+    font-weight:720;
+    font-size:15px;
+    height:15%;
+}
+.date{
+    margin-left:20px;
+    font-size:10px;
+    height:10%;
+    font-weight:50;
+    color: #524b4b;
+}
+.bottomContent{
+    border:pink;
+    display:flex;
+    margin-top:16px;
+    background-color: white;
+    width:945px;
+}
+.bottomImg{
+    width:39%;
+    /* border:solid green; */
+    height:210px;
+    /* margin-left:60px; */
+}
+.bottomInfo{
+    border:.5px solid rgb(222, 226, 233);
+    width:61%;
+    height:210px;
+    /* margin-right:60px; */
+}
+.btmHeadline{
+    height:75%;
+    margin-left:20px;
+    font-weight:bold;
+    font-size:19px;
+}
+.archivedTitle{
+    padding-left:35px;
+    font-size:20px;
+    font-weight:500px;
+    margin-top:40px;
+}
+.archivedRow{
+    /* border:solid purple; */
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+    margin-left:30px;
+    margin-right:50px;
+    margin-bottom:25px;
+}
+.year{
+    display:block;
+    border:solid rgb(181, 220, 230) 1px;
+    width:19%;
+    height:16px;
+    text-align:center;
+    background-color: white;
+    padding:15px;
+    border-radius: 5px;
+}
+.btmDisneyLogo{
+    /* border:solid blue; */
+    height: 36px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:35px;
+}
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid grey;
+    float: left;
+    border-right:none;
+    width: 250px;
+    background: #f1f1f1;
+    border-radius: 5px 0px 0px 5px;
+}
+form.example button {
+    float: right;
+    width: 45px;
+    height:37px;
+    padding: 10px;
+    background: white  ;
+    color: blue;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    background-image: url("https://static-mh.content.disney.io/matterhorn/assets/goc/inc-search-input-icon-blue-331475a2cf98.svg");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+.footer {
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+.footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+}
+.footer li {
+    padding: 8px 12px;
+}

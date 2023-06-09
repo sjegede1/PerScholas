@@ -1,0 +1,281 @@
+body {
+  font-family: Avenir, sans-serif;
+  background-color: #050713;
+  color: silver;
+}
+
+.topContainer {
+  display: flex;
+  flex-direction: column;
+  height: 515px;
+  /* border: solid thin black; */
+  padding-inline: 60px;
+  /* background-color: grey; */
+  justify-self: center;
+  background-image:url(//cnbl-cdn.bamgrid.com/assets/f3600701e072856ad4aa3af976799c7ea4f991127e309d7b9e32da2a3f679443/original);
+  background-size:cover;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60px;
+  margin: 5px 0px 20px 0px;
+}
+
+.loginButton {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #000000CC;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.subscriptionInfoContainer {
+  /* border: solid thin blue; */
+  width: 50%;
+}
+
+.subscriptionInfoCardGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriptionInfoCard {
+  /* border: solid thin pink; */
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.getThemButton {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 21px 33px;
+  background-color: #0063E5;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscriptionLogo {
+  width: 100%;
+}
+
+.carouselControls,
+.currentCarouselInfo {
+  align-self: center;
+  display: flex;
+  width: 100%;
+ justify-content: center;
+}
+
+.carouselControls hr {
+  width: 15%;
+  border-width: 2px;
+  margin-inline: 0.9px;
+}
+
+.browseContent {
+  /* border: solid thin black; */
+  padding: 0px 60px;
+}
+
+.browseOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0px 0px;
+  padding: 22px;
+  height: 20px;
+}
+
+.option {
+  margin: 0px 11px;
+  padding: 0px 0px 5px;
+  font-size: 15px 20px;
+}
+
+.browseCardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 400px;
+}
+
+.browseCard {
+  width: 300px;
+  height: 185px;
+  border-radius: 5px;
+  margin-inline: 10px;
+}
+
+.browsePlansContainer {
+  /* border: solid thin green; */
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectPlanBundle {
+  display: flex;
+  width: fit-content;
+  /* border: solid thin blue; */
+  border-radius: 200px;
+  margin: 24px 0px 0px 0px;
+  height: 48px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  background-color: darkgrey;
+}
+
+.bundleOption1,
+.bundleOption2 {
+  padding: 4px 15px;
+  /* border: solid thin grey; */
+  border-radius: 200px;
+  color: white;
+}
+
+.bundleOption1 {
+  margin-left: 5px;
+}
+.bundleOption2 {
+  margin-right: 5px;
+  background-color: blue;
+}
+
+.planTableHeadersGrid {
+  /* background-color: salmon; */
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 80px;
+}
+
+.planTableHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 12px 0px;
+}
+
+.disneyPlusLogo {
+  width: 80px;
+}
+
+.planPrice {
+
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 21px 33px;
+    background-color: #0063E5;
+    color: white;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.planTableContentGrid {
+  /* border: solid thin purple; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.planFeature {
+  text-align: left;
+  padding: 20px 0px;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 0.15px darkgray;
+  width: 100%;
+}
+
+.planTerms {
+  align-self: flex-start;
+  font-size: 12px;
+}
+
+.streamingFeaturesContainer {
+  display: flex;
+  padding: 60px;
+}
+
+.platformsImgContainer img {
+  width: 100%;
+}
+
+.platformsImgContainer {
+  padding-inline: 20px;
+  width: 50%;
+}
+
+.streamingFeaturesInfo {
+  width: 50%;
+}
+
+.getBundleImg {
+  /* border: solid thin white; */
+  background-image: url("https://cnbl-cdn.bamgrid.com/assets/9fec8e0beb78b7cf861278dea82035e2191413b2e921f5c5d81864fb13df68c8/original");
+  margin: 60px;
+  height: fit-content;
+  background-size: contain;
+}
+
+.devicesContainer {
+  text-align: center;
+}
+
+.deviceContainerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  padding: 60px;
+  justify-content: space-between;
+  /* text-align: center; */
+}
+
+.deviceIcon {
+  width: 100%;
+}
+
+.footerDisneyPlusLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.footerLogoImg {
+  height: 42px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 45px;
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer li {
+  padding: 8px 12px;
+}

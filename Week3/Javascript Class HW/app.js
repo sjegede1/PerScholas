@@ -30,13 +30,10 @@ class Hamster {
   }
 }
 
-// Person
-// attributes:
+names = ['Tope','Sola','Jordan','Huang']
+ages =[0,1,2,3]
 
-// name - set name from parameter in constructor method
-// age - initially 0
-// height - initially 0
-// weight - initially 0
+
 // mood - integer starting at 0 initially
 // hamsters - empty array initially
 // bankAccount - initially set to 0
