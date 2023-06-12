@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.headerWrapper {
+  display: flex;
+  height: 100px;
+  border-bottom: 2px solid black;
+}
+
+.leftPic {
+  display: flex;
+  align-items: center;
+}
+
+.leftImg {
+  height: 70px;
+  margin-left: 20px;
+}
+
+.titleWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleText {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main {
+  border: solid green;
+  display: flex;
+}
+
+.content {
+  border: solid red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.genreIntro {
+  display: flex;
+  flex-direction: column;
+}
+
+.topContent {
+  display: flex;
+  border: solid grey;
+  justify-content: space-evenly;
+}
+
+.content img {
+  width: 250px;
+  margin: 20px;
+  grid-area: img;
+}
+
+.description {
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
+}
+
+.aside {
+  width: 250px;
+  border: solid black;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buttonWrapper {
+  width: 215px;
+  height: 75px;
+  border: qpx solid black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  box-shadow: inset 0 0 8px 0 black;
+}
+
+button {
+  height: 60px;
+  width: 200px;
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: inset 0 0 15px 0 black, 0 0 6px 0 black;
+  background-color: rgb(177, 3, 3);
+  color: white;
+}
+
+button:hover {
+  height: 60px;
+  width: 200px;
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: inset 0 0 15px 0 black, 0 0 6px 0 black;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+footer {
+  background-color: #2d2db9;
+  height: 12vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.insta {
+  width: 25px;
+  margin: 20px;
+}
+.twitt {
+  width: 25px;
+  margin: 20px;
+}
+.fb {
+  width: 25px;
+  margin: 20px;
+}
+.instaIcon {
+  width: 100%;
+}
+.twittIcon {
+  width: 100%;
+}
+.fbIcon {
+  width: 100%;
+}
+.text {
+  height: 20px;
+  margin-right: 300px;
+  margin-top: 20px;
+  color: white;
+  font-size: large;
+}

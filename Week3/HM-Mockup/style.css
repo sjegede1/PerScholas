@@ -1,0 +1,87 @@
+.navBar{
+    border: 2px solid #000000;
+    height: 40px;
+    margin: 1em;
+    display: flex;
+}
+
+.tabs{
+    border: 1px solid black;
+    border-radius: 22px;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    margin: 12px;
+}
+.tabs:hover{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.options{
+    border: 2px solid green;
+    /* height: 340px; */
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainImage{
+    border: 2px solid blue;
+    height: 440px;
+    margin: 1em;
+}
+
+.productContainer{
+    border: 2px solid red;
+    height: 740px;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.displayMain{
+    border: 2px solid peru;
+    height: 340px;
+    margin: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logoContainer{
+    border: 2px solid purple;
+    width: 60%
+}
+
+.tabContainer{
+    border: 2px solid pink;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /*need this lol*/
+}
+
+.topPic{
+    width: 100%;
+    height: 100%;
+}
+
+.product{
+    border: 2px solid orange;
+    height: 350px;
+    width: 30%;
+    margin: 10px
+}
+
+.leftImage{
+    border: 2px solid grey;
+    width: 30%
+}
+
+.textContainer{
+    border: 2px solid black;
+    width: 60%
+}
+

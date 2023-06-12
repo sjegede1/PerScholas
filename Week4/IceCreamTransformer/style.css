@@ -1,0 +1,56 @@
+nav {
+    border: solid blue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 80%;
+    margin-inline: 20px;
+}
+
+.flavorContainer {
+    margin-inline: 20px;
+}
+
+.flavor1{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 40px;
+    height: 30px;
+}
+.flavor2{
+    background-color: chocolate;
+    color: antiquewhite;
+    border-radius: 40px;
+    height: 30px;
+}
+.flavor3{
+    background-color: palevioletred;
+    border-radius: 40px;
+    height: 30px;
+}
+
+.pageTitle {
+    border: solid red;
+    /* margin-left: 30%; */
+}
+
+main {
+    border: solid green;
+    /* height: 500px; */
+        /* Update for Matthew and Sarah */
+
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+/* Update for Matthew and Sarah */
+main img {
+    height: 150px;
+    border-radius: 500px;
+}
