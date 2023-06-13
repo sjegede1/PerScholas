@@ -1,0 +1,31 @@
+@keyframes jogging {
+    0% {
+      /* initialCommand */
+      transform: translateX(0vw);
+    }
+  
+    50%{
+    }
+  
+    100% {
+      /* finalCommand */
+      transform: translateX(110vw);
+    }
+  }
+
+.still-box1,.still-box2,.still-box3,.still-box4 {
+    border: solid red;
+    height: 200px;
+    width: 200px;
+}
+
+.moving-box {
+    border: solid green;
+    animation: jogging 5s ease-in-out infinite;
+}
+
+
+/* .running {
+    border: solid blue;
+    animation: jogging 13s ease-in-out infinite;
+  } */
