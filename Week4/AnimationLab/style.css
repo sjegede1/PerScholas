@@ -9,10 +9,30 @@
   
     100% {
       /* finalCommand */
-      transform: translateX(110vw);
+      transform: translateX(110vw) rotate3d(0,1,1,360deg);
     }
   }
 
+@keyframes spinning {
+    0% {
+      /* initialCommand */
+      transform: rotate(0deg);
+    }
+  
+    50%{
+    }
+  
+    100% {
+      /* finalCommand */
+      transform: rotate3d(0,1,1,360deg);
+      border-radius: 50%;
+    }
+  }
+
+
+img {
+    height: 100%;
+}
 .still-box1,.still-box2,.still-box3,.still-box4 {
     border: solid red;
     height: 200px;
@@ -22,6 +42,10 @@
 .moving-box {
     border: solid green;
     animation: jogging 5s ease-in-out infinite;
+}
+.spinning-box {
+    border: solid green;
+    animation: spinning 1s ease-in-out infinite;
 }
 
 
