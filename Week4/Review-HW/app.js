@@ -257,7 +257,129 @@ console.log('++++++++++++++++++++++++++++++++++++++')
     console.log(printCool("Captain Reynolds"));
     console.log('++++++++++++++++++++++++++++++++++++++')
 
-
-const isVowel = (char) => {
     
-}
+    // C. calculateCube
+    const calculateCube = (number) => {
+        return number**3
+    }
+    console.log(calculateCube(5));
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+
+
+    // D isVowel
+
+    const isVowel = (char) => {
+        if ('aeiou'.split('').includes(char)) {
+            return true
+        } else {
+            return false
+        }
+    }
+    console.log(isVowel("a"));
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+    // E. getTwoLengths
+    const getTwoLengths = (first,second) => {
+        return [first.length,second.length]
+    }
+    console.log(getTwoLengths("Hank", "Hippopopalous"));
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+    // F. getMultipleLengths 
+    const getMultipleLengths = (args) => {
+        let output = []
+        args.forEach((elem) => {output.push(elem.length)})
+        return output
+    }
+    console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+
+    // G. maxOfThree
+    const maxOfThree = (...args) => {
+        if (args[0] >= args[1] && args[0] >= args[1]) {
+            return args[0]
+        } else if (args[1] >= args[2]) {
+            return args[1]
+        } else {
+            return args[2]
+        }
+    }
+    console.log(maxOfThree(6, 9, 1));
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+    // H. printLongestWord
+    const printLongestWord = (args) => {
+        let currentMax = args[0]
+        args.forEach((el,i) => {
+            (currentMax.length<=el.length) ? (currentMax=el) : {}
+        }
+        )
+        return currentMax
+    }
+    console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+// V Object 
+    // A Make a user object 
+    let user = {
+        name: 'Sola',
+        email: 'email@email.com',
+        age: 30,
+        purchased: [],
+    }
+    console.log(user)
+    // B. Update the user
+    user.email = 'new-email@email.com'
+    user.age++
+    console.log(user)
+    console.log('++++++++++++++++++++++++++++++++++++++')
+    // C. Adding keys and values
+    user.location = 'Las giddy'
+    console.log(user)
+    console.log('++++++++++++++++++++++++++++++++++++++')
+    // D. Shopaholic!
+    user.purchased.push('carbohydrates','peace of mind','Merino jodhpurs')
+    console.log(user.purchased.at(-1))
+    console.log(user)
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+    // E. Object-within-object
+    friend = {
+        name: "Grace Hopper",
+        age: 85,
+        loaction: 'Atlanta',
+        purchased: [],
+    }
+
+    user.friend = friend
+    console.log(user)
+    friend.purchased.push('A latte')
+    console.log('++++++++++++++++++++++++++++++++++++++')
+
+
+    // F Loops
+    for (i of user.purchased) {
+        console.log(i)
+    }
+    for (i of friend.purchased) {
+        console.log(i)
+    }
+
+    // G Functions can operate on objects
+    const updateUser = () => {
+        user.age++
+        user.name = user.name.toUpperCase()
+    }
+
+    updateUser()
+    console.log(user)
+
+    const oldAndLoud = (person) => {
+        person.age++
+        person.name = person.name.toUpperCase()
+    }
+
+    oldAndLoud(user)
+    console.log(user)
