@@ -1,5 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/tickle-campus');
+body {
+    font-family: 'Tickle Campus', sans-serif;}
+
 nav {
-    border: solid blue;
+    /* border: solid blue; */
     height: 60px;
     display: flex;
     align-items: center;
@@ -34,12 +38,12 @@ nav img {
 }
 
 .pageTitle {
-    border: solid red;
+    /* border: solid red; */
     /* margin-left: 30%; */
 }
 
 main {
-    border: solid green;
+    /* border: solid green; */
     /* height: 500px; */
         /* Update for Matthew and Sarah */
 
@@ -47,10 +51,19 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 60px;
+    text-align: center;
 }
 
 /* Update for Matthew and Sarah */
 main img {
     height: 150px;
     border-radius: 500px;
+}
+
+.haiku {
+    display: flex;
+    align-items: center;
+    color: darkgrey;
+    font-size: 30px;
+    font-weight: bold;
 }
