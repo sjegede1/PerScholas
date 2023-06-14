@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="https://thumbs.gfycat.com/SparklingCluelessBedlingtonterrier-max-1mb.gif" alt="" class="logo">
+        <h1 class="websiteTitle">Welcome To The Wacky Races</h1>
+        <div class="login">Sign In | Sign Up | Prof Pic</div>
+    </nav>
+
+
+    <main>
+        <div class="raceTrackContainer">
+            <div class="racers">
+                <div class="racer peterperfect">
+                    <img src="./sprites/peterperfect.gif" alt="" class="char">
+                </div>
+                <div class="racer penelope">
+                    <img src="./sprites/penelope.gif" alt="" class="char">
+                </div>
+                <div class="racer dastardly">
+                    <img src="./sprites/dastardly.gif" alt="" class="char">
+                </div>
+                <div class="racer cavemen">
+                    <img src="./sprites/cavemen.gif" alt="" class="char">
+                </div>
+            </div>
+            <div class="raceTrack">
+                
+                <div class="middleBox">
+                    <div class="innerBox">
+                        <div class="centre"><strong>X</strong></div>
+                    </div>
+                </div>
+                <!-- <div class="racer"><img src="./sprites/peterperfect.gif" alt="" class="char"></div>
+                <div class="racer1"><img src="./sprites/penelope.gif" alt="" class="char"></div> -->
+            </div>
+        </div>
+
+        <div class="racersContainer">
+            <div class="selectRacers">
+                <h2>SELECT YOUR RACER</h2>
+                <div class="racerGrid">
+                    <div class="racerContainer">
+                        <img src="./sprites/peterperfect.gif" alt="" class="racerlogo">
+                        <button class="pressRacer" onclick="selectRacer('peterperfect')">Peter Perfect</button>
+                    </div>
+                    <div class="racerContainer">
+                        <img src="./sprites/penelope.gif" alt="" class="racerlogo">
+                        <button class="pressRacer" onclick="selectRacer('penelope')">Penelope Pitstop</button>
+                    </div>
+                    <div class="racerContainer">
+                        <img src="./sprites/dastardly.gif" alt="" class="racerlogo">
+                        <button class="pressRacer" onclick="selectRacer('dastardly')">Dick Dastardly</button>
+                    </div>
+                    <div class="racerContainer">
+                        <img src="./sprites/cavemen.gif" alt="" class="racerlogo">
+                        <button class="pressRacer" onclick="selectRacer('cavemen')"> The Slag Brothers</button>
+                    </div>
+                </div>
+            </div>
+            <div class="racerPodium">
+                <button class="startRace" onclick="startRace()">START YOUR RACES</button>
+                <h2 class="podiumTitle">Winners Podium</h2>
+                <div class="podiumGrid">
+                    podium
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
