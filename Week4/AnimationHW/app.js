@@ -71,12 +71,12 @@ const startRace = () => {
     currentElement.animate(raceKeyFrames(radii[index]), options);
   });
 //   Make award-winners button clickable
-    awardWinnersButton.disabled = false
+    awardWinnersButton.disabled = false;
 };
 
 // TODO: Make Podium Toggle
 // Create podium grid in HTML using grid and borders
-// THe functions below will be triggered when we award the winners
+// The functions below will be triggered when we award the winners
 const createEntries = (times) => {
   let entries = {};
   racerNames.forEach((element, index) => {
@@ -103,11 +103,12 @@ awardWinnersButton.onclick = () => {
     secondRacer.innerHTML = document.querySelector('.'+sortedWinnersArray[1]).innerHTML
     thirdRacer.innerHTML = document.querySelector('.'+sortedWinnersArray[2]).innerHTML
     
+    document.querySelector('.podiumGrid').classList.toggle('winner-podium')
+    awardWinnersButton.disabled = true
 }
 
 
 // TODO: Add bgColor, add font style
-// TODO: Vary racer speeds to create suspense
 
-//FUTURE WORK
-//TODO: Make Robot Dancing Game
+
+// TODO: Add footer content

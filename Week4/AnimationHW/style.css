@@ -5,20 +5,21 @@ body {
   flex-direction: column;
   /* align-items: center; */
   font-family: "outlander", sans-serif;
+  background-color: sandybrown;
 }
 
 nav {
-  border: solid black;
+  border-bottom: solid 1px black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 60px;
   align-items: center;
-  
+  background-color:cyan;
 }
 
 .logo {
-  border: solid green;
+  /* border: solid green; */
   border-radius: 50%;
   height: 48px;
   margin-inline: 15px;
@@ -31,7 +32,7 @@ nav {
 }
 
 main {
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   flex-direction: row;
   width: 900px;
@@ -41,13 +42,13 @@ main {
 .raceTrackContainer {
   display: flex;
   flex-direction: column;
-  border: solid blue;
+  /* border: solid blue; */
   width: 600px;
   height: 800px;
 }
 
 .middleBox {
-  border:dashed red;
+  border:dashed white;
   width: 450px;
   height: 600px;
   display: flex;
@@ -58,41 +59,43 @@ main {
 }
 
 .innerBox {
-  border: solid red;
+  border: solid white;
   width: 50%;
   height: 50%;
   border-radius: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: sandybrown;
 
 }
 
 .raceTrack {
   display: flex;
-  border: solid darkslateblue;
+  border: solid white;
   height: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 1000px;
+  background-color: #505050;
 }
 
 .racersContainer {
   width: 300px;
-  border: solid brown;
+  /* border: solid brown; */
 }
 
 .selectRacers {
   display: flex;
   flex-direction: column;
-  border: solid yellow;
+  /* border: solid yellow; */
   height: 50%;
   justify-content: center;
   align-items: center;
 }
 
 .racerPodium {
-  border: solid black;
+  /* border: soslid black; */
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -100,7 +103,7 @@ main {
   align-items: center;
 }
 .racers {
-  border: solid green;
+  /* border: solid green; */
   display: flex;
   flex-wrap: wrap;
   height: 0px;
@@ -116,18 +119,28 @@ main {
 
 .racer-selected {
   background-color: gold;
+  
 }
 
 .podiumGrid {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(3,1fr);
-  border: solid black;
+  /* border: solid black; */
   width: 200px;
-  height:200px
+  height:200px;
+  text-align: center;
+  padding: 20px 20px 0px;
+  
+}
+
+.winner-podium {
+  display: grid;
+  background-image: url('https://i.pinimg.com/originals/41/e7/4b/41e74b0f91b7cb7df6b73e34ae8528a4.gif');
+  background-size: contain;
 }
 
 .empty {
-  background-color: green;
+  /* background-color: green; */
   
 }
 
@@ -139,23 +152,30 @@ main {
 }
 
 .podium-stand {
-  background-color: yellow;
+  background-color: brown;
 }
 
 #first-stand {
   border-top: solid thick black;
   border-inline: solid thick black;
+  background-color: gold;
 }
 #second-stand {
   border-top: solid thick black;
   border-bottom: solid thick black;
   border-left: solid thick black;
+  background-color: silver;
 }
 #third-stand {
   border-top: solid thick black;
   border-bottom: solid thick black;
   border-right: solid thick black;
+  background-color: #CD7F32;
 }
 #empty-stand {
   border-bottom: solid thick black;
+}
+
+hr {
+  width: 70%;
 }
