@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <img src="https://thumbs.gfycat.com/SparklingCluelessBedlingtonterrier-max-1mb.gif" alt="" class="logo">
+        <a href="index.html"><img src="https://thumbs.gfycat.com/SparklingCluelessBedlingtonterrier-max-1mb.gif" alt="" class="logo"></a>
         <h1 class="websiteTitle">Welcome To The Wacky Races</h1>
         <div class="login">Sign In | Sign Up | Prof Pic</div>
     </nav>
@@ -67,9 +67,20 @@
             <div class="racerPodium">
                 <button class="startRace" onclick="startRace()">START YOUR RACES</button>
                 <h2 class="podiumTitle">Winners Podium</h2>
+                <button class="award-winners" disabled>AWARD WINNERS</button>
                 <div class="podiumGrid">
-                    podium
+                    <div class="empty">x</div>
+                    <div class="" id="first-racer">1st</div>
+                    <div class="empty">x</div>
+                    <div id="second-racer">2nd</div>
+                    <div class="podium-stand" id="first-stand"><h2>1st</h2></div>
+                    <div class="" id="third-racer">3rd</div>
+                    <div class="podium-stand" id="second-stand"><h2>2nd</h2></div>
+                    <div class="podium-stand" id="empty-stand">O</div>
+                    <div class="podium-stand" id="third-stand"><h2>3rd</h2></div>
                 </div>
+
+                
 
             </div>
         </div>

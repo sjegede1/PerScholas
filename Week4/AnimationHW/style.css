@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+  font-family: "outlander", sans-serif;
 }
 
 nav {
@@ -13,13 +14,13 @@ nav {
   justify-content: space-between;
   height: 60px;
   align-items: center;
-  font-family: "outlander", sans-serif;
+  
 }
 
 .logo {
   border: solid green;
   border-radius: 50%;
-  height: 80%;
+  height: 48px;
   margin-inline: 15px;
   text-align: center;
 }
@@ -115,4 +116,46 @@ main {
 
 .racer-selected {
   background-color: gold;
+}
+
+.podiumGrid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: solid black;
+  width: 200px;
+  height:200px
+}
+
+.empty {
+  background-color: green;
+  
+}
+
+#first-racer {
+}
+#second-racer {
+}
+#third-racer {
+}
+
+.podium-stand {
+  background-color: yellow;
+}
+
+#first-stand {
+  border-top: solid thick black;
+  border-inline: solid thick black;
+}
+#second-stand {
+  border-top: solid thick black;
+  border-bottom: solid thick black;
+  border-left: solid thick black;
+}
+#third-stand {
+  border-top: solid thick black;
+  border-bottom: solid thick black;
+  border-right: solid thick black;
+}
+#empty-stand {
+  border-bottom: solid thick black;
 }
