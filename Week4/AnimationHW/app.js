@@ -74,7 +74,6 @@ const startRace = () => {
     awardWinnersButton.disabled = false;
 };
 
-// TODO: Make Podium Toggle
 // Create podium grid in HTML using grid and borders
 // The functions below will be triggered when we award the winners
 const createEntries = (times) => {
@@ -104,11 +103,7 @@ awardWinnersButton.onclick = () => {
     thirdRacer.innerHTML = document.querySelector('.'+sortedWinnersArray[2]).innerHTML
     
     document.querySelector('.podiumGrid').classList.toggle('winner-podium')
-    awardWinnersButton.disabled = true
 }
 
-
-// TODO: Add bgColor, add font style
-
-
-// TODO: Add footer content
+// Style Buttons and Add footer
+// Buttons have been styles. Need to populate footer content if I have the time in the morning
