@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border: solid thick black;
+    width:500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+    text-align: center;
+}
+
+.player {
+    display: flex;
+    background-color: green;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.alien {
+    background-color: red;
+    display: flex;
+    height: 200px;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
