@@ -1,0 +1,463 @@
+/* --------------------------LAPTOP-------------------------- */
+
+@media (min-width: 1280px) {
+  body {
+    background-color: gold;
+  }
+/*
+  .banner {
+    display: flex;
+    border: solid thin black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-apply-now {
+    background-color: gold;
+  } */
+
+  .logoImg {
+    height: 26px;
+}
+
+  .menu-icon {
+    display: none
+  }
+
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li.menu-item {
+    font-weight: bold;
+    margin-inline: 20px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .topCardContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: solid blue; */
+  }
+
+  .topCard {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .topCardImg {
+    width: 100%;
+  }
+
+  .topCardInfo {
+    display: flex;
+    flex-direction: column;
+    margin: -100px 20px 0px;
+    background-color: white;
+    z-index: 1;
+    /* border: dashed black; */
+  }
+
+  .support-container {
+    display: flex;
+    /* height: 300px; */
+  }
+
+  .support-container img {
+    height: 100%;
+  }
+
+  .support-info-card {
+    margin-left: -100px;
+    z-index: 1;
+    background-color: #0178be;
+    color: white;
+    padding: 45px 30px;
+}
+}
+
+/* ---------------------------- IPAD ------------------------------ */
+
+@media (max-width: 1280px) {
+  body {
+    background-color: aquamarine;
+  }
+
+  /* .banner {
+    display: flex;
+    border: solid thin black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-apply-now {
+    background-color: gold;
+  } */
+
+  .logoImg {
+    height: 20px;
+}
+
+
+  .menu-icon {
+    /* border: solid black; */
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .menu-img {
+    height: 45px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  
+
+  main {
+    width: 100%;
+  }
+
+  .topCardContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: solid blue; */
+  }
+
+  .topCard {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .topCardImg {
+    width: 100%;
+  }
+
+  .topCardInfo {
+    display: flex;
+    flex-direction: column;
+    margin: -100px 20px 0px;
+    background-color: white;
+    z-index: 1;
+    /* border: dashed black; */
+  }
+
+  .support-container {
+    /* border: solid purple; */
+    display: flex;
+  }
+
+  .menu-list-footer {
+    list-style-type: none;
+  }
+
+  .support-info-card {
+    margin-left: -100px;
+    z-index: 1;
+    background-color: #0178be;
+    color: white;
+    padding: 45px 30px;
+}
+}
+
+/* ---------------------------- PHONE ------------------------------------- */
+
+@media (max-width: 960px) {
+  body {
+    background-color: bisque;
+  }
+/* 
+  .banner {
+    display: flex;
+    border: solid thin black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-apply-now {
+    background-color: gold;
+  } */
+
+
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-icon {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .menu-img {
+    height: 40px;
+  }
+
+  .topCardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .topCardImg {
+    width: 100%;
+  }
+
+  .topCardInfo {
+    display: flex;
+    flex-direction: column;
+    margin: -100px 20px 0px;
+    background-color: white;
+    z-index: 1;
+    /* border: dashed black; */
+  }
+
+  .support-container {
+    display: flex;
+    /* height: 300px;   */
+    flex-direction: column;
+  }
+
+  .support-container img {
+    width: 100%;
+  }
+
+  .support-info-card {
+    margin: 0px;
+  }
+}
+
+/* .............................GENERAL--------------------- */
+body {
+    font-family:  Grotesk,Helvetica Neue,Arial,sans-serif;
+}
+
+.banner {
+  display: flex;
+  /* border: solid thin black; */
+  align-items: center;
+  justify-content:center;
+  background-color: rgb(9, 80, 124);
+  color: white;
+  font-family: "Rubik";
+  font-size: 18px;
+  height: 56px;
+  text-align: center;
+  width: 100%;
+  /* position: fixed;
+  top: 1px; */
+  margin-inline: 1px;
+}
+
+.banner-mid {
+    display:flex;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.banner-apply-now {
+  display: flex;
+  background-color: gold;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  height: 36px;
+  width: 130px;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10px;
+  color:black;
+  text-decoration: none;
+  margin-inline: 20px;
+}
+
+.close-banner {
+  color: white;
+  text-decoration: none;
+  justify-self: end;
+  margin-inline: 10px;
+  padding: 10px;  
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* border: solid thin brown; */
+  height: 60px;
+  align-items: center;
+}
+
+
+
+main {
+  width: 100%;
+}
+
+.topCardContainer {
+    /* width: 100%; */
+}
+
+.topCardInfo {
+    /* border: dashed black; */
+    padding: 30px;
+}
+
+.topCardInfo span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.topCard a {
+    display: flex;
+    background-color: gold;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.topCard img {
+    aspect-ratio: 1 / 1;
+}
+
+.middleCardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: solid green; */
+  margin-bottom: 30%;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.middleCardContainer h2 {
+    width: 590px;
+    display: flex;
+    text-align: center;
+    
+}
+
+.middleCardImg {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.middleCardImg img {
+  width: 100%;
+  transition: transform 1s;
+}
+
+.middleCardImg img:hover {
+  width: 100%;
+  transform: scale(1.02);
+}
+
+
+
+button.play-button {
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+  border-radius: 50%;
+  align-self: center;
+  margin-top: -35%;
+  z-index: 1;
+}
+
+.alumni-carousel {
+  /* border: solid red; */
+  margin: 20px;
+}
+
+.alumni-carousel span {
+  /* border: solid purple; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-img-container {
+  /* border: solid blue; */
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent content from wrapping */
+}
+
+.carousel-img {
+  height: 80px;
+  margin: 50px 20px;
+}
+
+.support-container img {
+  height:500px
+}
+
+.support-container {
+    width: 100%;
+}
+
+.support-info-card {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.social-logo-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+}
+
+
+.donate {
+    display: flex;
+    width: 160px;
+    height: 45px;
+    background-color: gold;
+    font-size: 18px;
+    padding: 4px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-logo {
+  margin-right: 5px;
+}
+
+footer {
+  margin: 20px;
+}
