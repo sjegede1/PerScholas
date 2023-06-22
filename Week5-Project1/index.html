@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Save The Galaxy</title>
+  </head>
+  <body>
     <main>
-        <div class="player">
-            <div class="stats">
-                <h2>PLAYER</h2>
-                Hull:<span class="player-hull"></span> <br>
-                Firepower:<span class="player-firepower"></span><br>
-                Accuracy:<span class="player-accuracy"></span><br>
-                <button class="actions-menu">MENU</button>
-            </div>
-            <div class="actions">
-                <button class="attack" onclick="player.attack()">ATTACK</button>
-                <button class="retreat" onclick="player.retreat()">RETREAT</button>
-                <button class="shield" onclick="player.shield()">SHIELD</button>
-                <button class="bomb" onclick="player.bomb()">BOMB</button>
-            </div>
-            
-        </div>
-        <div class="alien">
-            <div class="stats">
-                <h2>ENEMY</h2>
-                Hull:<span class="alien-hull"></span><br>
-                Firepower:<span class="alien-firepower"></span><br>
-                Accuracy:<span class="alien-accuracy"></span>
-            </div>
-            <div class="actions">
-                <button class="attack" onclick="alien.attack()">ATTACK</button>
-            </div>
-            
-        </div>
+      <div class="img-box">
+        <img src="./sprites/goku/goku-idle-1.png" alt="" class="player-img" />
+        <img src="./sprites/goku/goku-key_blast-3.png" alt="" class="projectile-img">
+    </div>
+    <div class="img-box">
+      <img src="./sprites/frieza/frieza-idle-1.png" alt="" class="alien-img">
+      <img src="./sprites/frieza/frieza-key_blast-3.png" alt="" class="alien-projectile-img">
+    </div>
+      
+      
     </main>
 
+    <aside>
+      <div class="player">
+        
+        <div class="stats">
+          <h2>PLAYER</h2>
+          Hull:<span class="player-hull"></span> <br />
+          Firepower:<span class="player-firepower"></span><br />
+          Accuracy:<span class="player-accuracy"></span><br />
+          <button class="actions-menu">MENU</button>
+        </div>
+        <div class="actions">
+          <button class="attack" onclick="player.attack()">ATTACK</button>
+          <button class="retreat" onclick="player.retreat()" disabled>
+            RETREAT
+          </button>
+          <button class="shield" onclick="player.shield()">SHIELD</button>
+          <button class="bomb" onclick="player.bomb()">BOMB</button>
+        </div>
+      </div>
+
+      <button class="next-turn" onclick="nextTurn()" disabled>NEXT TURN</button>
+      <div class="turn-info">WELCOME TO THE GAME, NOW ATTACK!!</div>
+      <button class="refresh" onclick="location.reload()">REFRESH</button>
+
+      <div class="alien">
+        
+        <div class="stats">
+          <h2>ENEMY</h2>
+          Hull:<span class="alien-hull"></span><br />
+          Firepower:<span class="alien-firepower"></span><br />
+          Accuracy:<span class="alien-accuracy"></span>
+        </div>
+        <div class="actions">
+          <button class="attack" onclick="alien.attack()">ATTACK</button>
+        </div>
+      </div>
+
+      
+    </aside>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
