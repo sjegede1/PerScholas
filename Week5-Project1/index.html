@@ -7,29 +7,27 @@
     <title>Save The Galaxy</title>
   </head>
   <body>
+    <nav>
+      <img src="https://1000logos.net/wp-content/uploads/2022/02/Dragon-Ball-Logo.png" alt="" class="logo">
+      <h1><span style="color: gold">SAVE</span> <span style="color: red">THE GALAXY</span></h1>
+    </nav>
+
     <main>
-      <div class="img-box">
-        <img src="./sprites/goku/goku-idle-1.png" alt="" class="player-img" />
-        <img src="./sprites/goku/goku-key_blast-3.png" alt="" class="projectile-img">
-    </div>
-    <div class="img-box">
-      <img src="./sprites/frieza/frieza-idle-1.png" alt="" class="alien-img">
-      <img src="./sprites/frieza/frieza-key_blast-3.png" alt="" class="alien-projectile-img">
-    </div>
-      
-      
+      <div class="img-box player-box">
+        <img src="" alt="" class="player-img" />
+        <img src="" alt="" class="player-projectile" />
+      </div>
+
+      <div class="img-box alien-box">
+        <img src="" alt="" class="alien-img" />
+        <img src="" alt="" class="alien-projectile" />
+      </div>
     </main>
 
     <aside>
       <div class="player">
-        
-        <div class="stats">
-          <h2>PLAYER</h2>
-          Hull:<span class="player-hull"></span> <br />
-          Firepower:<span class="player-firepower"></span><br />
-          Accuracy:<span class="player-accuracy"></span><br />
-          <button class="actions-menu">MENU</button>
-        </div>
+        <h1>GOKU</h1>
+        <button class="actions-menu">MENU</button>
         <div class="actions">
           <button class="attack" onclick="player.attack()">ATTACK</button>
           <button class="retreat" onclick="player.retreat()" disabled>
@@ -38,26 +36,43 @@
           <button class="shield" onclick="player.shield()">SHIELD</button>
           <button class="bomb" onclick="player.bomb()">BOMB</button>
         </div>
+        <div class="stats">
+          <p class="stats-info">
+            <strong>HEALTH: </strong><span class="player-hull"></span> <br />
+            <strong>FIREPOWER: </strong><span class="player-firepower"></span
+            ><br />
+            <strong>ACCURACY: </strong><span class="player-accuracy"></span
+            ><br />
+          </p>
+        </div>
       </div>
 
-      <button class="next-turn" onclick="nextTurn()" disabled>NEXT TURN</button>
-      <div class="turn-info">WELCOME TO THE GAME, NOW ATTACK!!</div>
-      <button class="refresh" onclick="location.reload()">REFRESH</button>
+      <div class="middle-console">
+        <button class="next-turn" onclick="nextTurn()" disabled>
+          NEXT TURN
+        </button>
+
+        <h3 class="turn-info">
+          FRIEZA HAS CLONED HIMSELF AND WE NEED TO DEFEAT ALL THE CLONES TO SAVE
+          THE EARTH
+        </h3>
+
+        <button class="refresh" onclick="location.reload()">REFRESH</button>
+      </div>
 
       <div class="alien">
-        
+        <h1>FRIEZA</h1>
+        <h2></h2>
+        <!-- <button class="attack" onclick="alien.attack()">ATTACK</button> -->
         <div class="stats">
-          <h2>ENEMY</h2>
-          Hull:<span class="alien-hull"></span><br />
-          Firepower:<span class="alien-firepower"></span><br />
-          Accuracy:<span class="alien-accuracy"></span>
-        </div>
-        <div class="actions">
-          <button class="attack" onclick="alien.attack()">ATTACK</button>
+          <p>
+            <strong>HEALTH: </strong><span class="alien-hull"></span><br />
+            <strong>FIREPOWER: </strong><span class="alien-firepower"></span
+            ><br />
+            <strong>ACCURACY: </strong><span class="alien-accuracy"></span>
+          </p>
         </div>
       </div>
-
-      
     </aside>
 
     <script src="app.js"></script>
