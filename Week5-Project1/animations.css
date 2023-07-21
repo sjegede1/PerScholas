@@ -23,18 +23,20 @@ main {
     text-align: center;
     background-image: url("https://i.pinimg.com/originals/f5/7e/f2/f57ef2ee0d54e2c0df32ea04d463acff.jpg");
     background-size:cover;
-    z-index: -8;
+    /* z-index: -8; */
 }
 
 .img-box {
     /* border: solid red; */
     display: flex;
     align-items: flex-end;
+    border: solid red;
 }
 
 .alien-box {
     flex-direction: row;
     transform: rotateY(180deg);
+    border: solid red;
 }
 
 
@@ -74,7 +76,7 @@ main {
     animation: goku-key-blast-projectile 2s  forwards;
     animation-timing-function:ease-in-out;
     align-self: center;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 @keyframes goku-key-blast-projectile {
@@ -214,7 +216,7 @@ main {
     animation: frieza-key-blast-projectile 2s  forwards;
     animation-timing-function:ease-in-out;
     align-self: center;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 @keyframes frieza-key-blast-projectile {
@@ -325,7 +327,7 @@ main {
 .goku-punch-player {
     animation: goku-punch-player 3s forwards;
     animation-timing-function: linear;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 @keyframes goku-punch-player {
@@ -372,7 +374,7 @@ main {
 .goku-punch-projectile {
     animation: goku-punch-projectile 3s forwards;
     animation-timing-function: linear;
-    z-index: 1;
+    /* z-index: 1; */
     align-self: center;
     opacity: 70%;
 }
@@ -468,7 +470,7 @@ main {
 .frieza-whip-alien {
     animation: frieza-whip-alien 3s forwards;
     animation-timing-function: linear;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 @keyframes frieza-whip-alien {
@@ -530,7 +532,7 @@ main {
 .frieza-whip-projectile {
     animation: frieza-whip-projectile 3s forwards;
     animation-timing-function: linear;
-    z-index: 1;
+    /* z-index: 2; */
     align-self: center;
     opacity: 70%;
 }
@@ -629,7 +631,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.goku-shield-1 {
+/* .goku-shield-1 {
     animation: goku-shield 2s forwards;
     animation-timing-function: linear;
 }
@@ -638,4 +640,4 @@ main {
     0%{
         content-visibility: ;
     }
-}
+} */

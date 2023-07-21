@@ -1,10 +1,11 @@
-// Current Round and Win conditions
+// CURRENT ROUND AND WIN CONDITIONS. GLOBAL VARIABLES
 let playerTurn = true; // true is player turn, false is alien turn
 let gameOver = 0; //-1 game hasn't started yet, 0 is ongoing game, 1 is game win, 2 is gmae lose, 3 is game retreat
 let alienIsDead = 0; //0 alien is alive, 1 alien is dead switch alien
 let nextRound = 0; //0 stay on this round, 1 move to next round
-let  alienColors = ['orange','blue','red','green','yellow','purple','gold','pink']
+let  alienColors = ['orange','blue','red','green','yellow','purple','gold','pink'] //BG color of each clone
 
+//INITIAL FUNCTIONS
 // Generate random number between min and max
 const randomNumberBetween = (min,max) => {
     return parseInt(Math.random()*(max-min)) + min
@@ -39,7 +40,7 @@ const generateAlien = () => {
     }
     return enemy
 }
-// Generate 3-9 aliens
+// Generate 4-8 aliens in hoarde
 const generateAliensArray = () => {
     // random number fo enemies between 4 and 8
     let numEnemies = randomNumberBetween(4,8);
@@ -54,8 +55,6 @@ const generateAliensArray = () => {
     }
     return hoarde.reverse()
 }
-
-// change the current frieza's color
 
 // Instantiate player, hoarde and alien
 let player = {
@@ -122,13 +121,11 @@ let player = {
         
     }
 }
-
 let hoarde = generateAliensArray();
-console.log(hoarde)
 let alien = hoarde.pop();
 
-// console.log('Hoarde of aliens', hoarde)
 
+// DOM MANIPULATION - Initialize divs
 const playerDiv = document.querySelector('.player');
 const alienDiv = document.querySelector('.alien');
 const menuButton = document.querySelector('.actions-menu');
@@ -137,13 +134,18 @@ const goku = document.querySelector('.player-img')
 const gokuProjectile = document.querySelector('.player-projectile')
 const frieza = document.querySelector('.alien-img')
 const friezaProjectile = document.querySelector('.alien-projectile')
-alien.colorBG()
+
 const turnInfo = document.querySelector('.turn-info')
 
+
+// DOM MANIPULATION FUNCTIONS AND GAME FLOW CONTROLS
+// Animate Frieza getting hurt
+// TODO Abstract animations
 const alienHurt = () => {
     frieza.classList = "alien-img frieza-hurt"
 }
 
+// Bring out the next alien
 const updateAlien = () => {
     if (hoarde.length>1) {
         alien = hoarde.pop()
@@ -155,25 +157,26 @@ const updateAlien = () => {
     }
 }
 
+// toggle next-turn button's clickability
 const disableNextTurnButton = () => {
     document.querySelector('.next-turn').disabled = 1;
 }
-
 const enableNextTurnButton = () => {
     document.querySelector('.next-turn').disabled = 0;
 }
 
+// toggle player actions buttons depending on whose turn it is
 const disablePlayerButtons = () => {
     playerDiv.querySelectorAll('button').forEach(element => element.disabled = 1);
     playerDiv.querySelector('.retreat').disabled = 0;
     playerDiv.querySelector('.actions-menu').disabled = 0;
 }
-
 const enablePlayerButtons = () => {
     playerDiv.querySelectorAll('button').forEach(element => element.disabled = 0);
     playerDiv.querySelector('.retreat').disabled = 1;
 }
 
+// Reset alien-img and player-img to idle sprite image
 const resetPlayers = (...playerNum) => {
     //playerNum=> 1 for player, 2 for alien
     if (playerNum.includes(1)) {
@@ -190,6 +193,7 @@ const resetPlayers = (...playerNum) => {
     // friezaProjectile.classList = "alien-projectile"
 }
 
+// nextTurn button uses flow-control callback functions
 const nextTurn = () => {
     if (hoarde.length==1 && alien.hull<=0) {
         gameOver = 1;
@@ -216,6 +220,7 @@ const nextTurn = () => {
     console.log('Next Turn Button');
 }
 
+// Update player and alien div with current stats
 const updateScreen = () => {
     playerDiv.querySelector('.player-hull').innerHTML = player.hull
     playerDiv.querySelector('.player-firepower').innerHTML = player.firepower
@@ -227,9 +232,13 @@ const updateScreen = () => {
     alienDiv.querySelector('.alien-accuracy').innerHTML = alien.accuracy
 }
 
+// Toggle Menu visibility
 menuButton.addEventListener('click', () => {
     menuButton.parentElement.parentElement.querySelector('.actions').classList.toggle('hidden');
 })
 
-updateScreen()
 
+// INITIALIZE GAME SCREEN
+updateScreen()
+alien.colorBG()
+console.log(`Look out!\n ${hoarde.length} of FRIEZA's clones have shown up`)

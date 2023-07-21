@@ -49,13 +49,19 @@ nav h1 {
     background-size:cover;
 } */
 
+.player-projectile, .alien-projectile {
+    border: solid blue;
+}
+
 .player-img {
     content: url('./sprites/goku/goku-idle-1.png');
+    border: solid black;
 }
 
 .alien-img {
     content: url('./sprites/frieza/frieza-idle-1.png');
     border-radius: 500px;
+    border: solid black;
 }
 
 .player {
@@ -152,10 +158,10 @@ aside button {
 .middle-console h3 {
     text-align: center;
     margin: 10px;
-    background-color:darksalmon;
+    background-color:black;
     border-radius: 500px ;
     padding: 30px;
-    color: green;
+    color: lime;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 2px;
     word-spacing: 0.5em;
